@@ -24,12 +24,12 @@ contract Task_09 {
 
 
    // Функция, возвращающая среднее арифиметическое всех байтов; используется целочисленное деление
-   function getFixedByteArrayAverage(bytes1[4] memory _data) public pure returns (uint8) {
-       uint8 sum = 0;
-       for (uint8 i = 0; i < _data.length; i++) {
+   function getFixedByteArrayAverage(bytes1[4] memory _data) public pure returns (uint256) {
+       uint256 sum = 0;
+       for (uint256 i = 0; i < _data.length; i++) {
            sum += uint8(_data[i]);
        }
-       return uint8(sum / _data.length);
+       return uint256(sum / _data.length);
    }
 
 }
