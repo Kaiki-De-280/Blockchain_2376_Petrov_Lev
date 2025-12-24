@@ -46,11 +46,7 @@ contract ExampleUsage {
    // Пример использования тернарного оператора
    function ternaryExample(uint256 _value) public pure returns (string memory) {
        // Исправление: переписываем с использованием if-else
-       if (_value > 10) {
-           return "Value is greater than 10";
-       } else {
-           return "Value is 10 or less";
-       }
+       return _value > 10? "Value is greater than 10" : "Value is 10 or less";
    }
    // В этом контракте уже всё сделано по заданию
 }
